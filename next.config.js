@@ -8,9 +8,9 @@ const nextConfig = {
       },
     ],
   },
-  // experimental: {
-  //   serverActions: true,
-  // },
+  experimental: {
+    serverActions: true,
+  },
   output: 'export',  // This line is added to specify static export
 };
 
