@@ -9,9 +9,9 @@ const nextConfig = {
     ],
   },
   experimental: {
-    serverActions: {},
+    serverActions: true,
   },
-  output: 'export',  // This line is added to specify static export
+  //output: 'export',  // This line is added to specify static export
 };
 
 module.exports = nextConfig;
