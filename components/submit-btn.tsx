@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 
 export default function SubmitBtn() {
-  const [isPending, setIsPending] = useState(false);
+  const [isPending, setIsPending] = useState<boolean>(false);
 
-  const handleSubmit = async (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
+  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     setIsPending(true);
-    // Simulate form submission delay or handle form logic here
-    setTimeout(() => setIsPending(false), 2000); // Replace this with actual submit function
+    
+    // Simulate form submission with a delay
+    try {
+      await new Promise<void>((resolve) => setTimeout(resolve, 2000)); // Example delay for demonstration
+    } finally {
+      setIsPending(false);
+    }
   };
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import Ecommerceimg from "@/public/Ecommerceimg.png";
+import taskmang from "@/public/taskmang.png";
 import Ecommercei from "@/public/Ecommercei.png";
 import EcommerceAdmin from "@/public/EcommerceAdmin.png";
 
@@ -66,7 +66,7 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: Ecommerceimg,
+    imageUrl: taskmang,
   },
   {
     title: "Ecommerce",
